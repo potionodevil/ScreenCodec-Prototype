@@ -1,0 +1,89 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Files</title>
+<link rel="stylesheet" href="common.css">
+<style>
+body { background: #ffffff; }
+.hdr { left: 0; top: 0; width: 1920px; height: 60px; background: #f6f8fa; border-bottom: 1px solid #d0d7de; }
+.side { left: 0; top: 60px; width: 260px; height: 990px; background: #f6f8fa; border-right: 1px solid #d0d7de; }
+.fold { left: 12px; width: 236px; height: 32px; border-radius: 6px; }
+.fold span { position: absolute; left: 40px; top: 6px; white-space: nowrap; }
+.fold svg { position: absolute; left: 12px; top: 6px; }
+.tbl { left: 290px; top: 170px; width: 1100px; height: 600px; border: 1px solid #d0d7de; border-radius: 6px; background: #fff; }
+.row { left: 1px; width: 1098px; height: 36px; border-bottom: 1px solid #eaeef2; }
+.row .c { position: absolute; top: 8px; white-space: nowrap; }
+.row svg { position: absolute; left: 14px; top: 8px; }
+.status { left: 0; top: 1050px; width: 1920px; height: 30px; background: #f6f8fa; border-top: 1px solid #d0d7de; }
+.prev { left: 1420px; top: 170px; width: 470px; height: 600px; border: 1px solid #d0d7de; border-radius: 6px; background: #fff; }
+.modal { left: 735px; top: 380px; width: 450px; height: 190px; background: #fff; border: 1px solid #8c959f; border-radius: 8px; box-shadow: 0 12px 32px rgba(0,0,0,0.3); display: none; }
+.up { left: 1420px; top: 800px; width: 470px; height: 110px; border: 1px solid #d0d7de; border-radius: 6px; background: #fff; display: none; }
+</style></head><body>
+<div class="abs hdr" data-gt="panel">
+  <span class="abs" style="left:20px; top:16px" data-gt="icon"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M2 5h7l2 3h11v12H2z" fill="#e3b341" stroke="#9a6700"/></svg></span>
+  <span class="abs nowrap" style="left:60px; top:18px; font-size:18px; font-weight:600" data-gt="text">Files</span>
+  <input class="abs tf" id="q" style="left:660px; top:13px; width:600px" placeholder="Search in Documents" data-gt="textfield">
+  <div class="abs btn primary" style="left:1760px; top:13px" data-gt="button">Upload</div>
+</div>
+<div class="abs side" data-gt="panel" data-title="Places">
+  <div class="abs" style="left:12px; top:20px; width:236px; height:222px" data-gt="list" data-title="Folders"></div>
+  <div class="abs fold" style="top:20px" data-gt="listitem"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10H3z" fill="#fff" stroke="#57606a" stroke-width="2"/></svg><span>Home</span></div>
+  <div class="abs fold sel" style="top:58px" data-gt="listitem"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M2 5h7l2 3h11v12H2z" fill="#e3b341" stroke="#9a6700"/></svg><span>Documents</span></div>
+  <div class="abs fold" style="top:96px" data-gt="listitem"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M2 5h7l2 3h11v12H2z" fill="#e3b341" stroke="#9a6700"/></svg><span>Downloads</span></div>
+  <div class="abs fold" style="top:134px" data-gt="listitem"><svg width="20" height="20" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" fill="#9ecbff" stroke="#0969da"/><path d="M3 19l6-8 5 6 3-3 4 5z" fill="#1a7f37"/></svg><span>Pictures</span></div>
+  <div class="abs fold" style="top:172px" data-gt="listitem"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13" fill="none" stroke="#8250df" stroke-width="2"/><circle cx="6" cy="18" r="3" fill="#8250df"/><circle cx="18" cy="16" r="3" fill="#8250df"/></svg><span>Music</span></div>
+  <div class="abs fold" style="top:210px" data-gt="listitem"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4 7h16v13H4zM9 4h6v3H9z" fill="#fff" stroke="#57606a" stroke-width="2"/></svg><span>Trash</span></div>
+  <div class="abs nowrap" style="left:24px; top:300px; color:#59636e; font-size:13px" data-gt="text">Storage</div>
+  <div class="abs prog" style="left:24px; top:326px; width:212px" data-gt="progressbar" data-value="42"><div style="width:42%"></div></div>
+  <div class="abs nowrap" style="left:24px; top:344px; color:#59636e; font-size:13px" data-gt="text">42 GB of 100 GB used</div>
+</div>
+<div class="abs nowrap" style="left:290px; top:84px; font-size:20px; font-weight:600" data-gt="text">Documents</div>
+<div class="abs btn" style="left:290px; top:124px" data-gt="button">New folder</div>
+<div class="abs btn" style="left:416px; top:124px" data-gt="button">Rename</div>
+<div class="abs btn" id="del" style="left:516px; top:124px" data-gt="button">Delete</div>
+<div class="abs nowrap" style="left:1200px; top:132px; color:#59636e" data-gt="text">Sort by: Date modified</div>
+<div class="abs tbl" data-gt="list" data-title="Files" id="tbl"></div>
+<div class="abs prev" data-gt="panel" data-title="Preview">
+  <img class="abs" src="photo.png" style="left:20px; top:20px; width:430px; height:280px" data-gt="image">
+  <div class="abs nowrap" style="left:20px; top:316px; font-weight:600" data-gt="text" id="pvname">Lake_Sunset_0412.jpg</div>
+  <div class="abs nowrap" style="left:20px; top:342px; color:#59636e" data-gt="text">JPEG image, 3.1 MB</div>
+  <div class="abs nowrap" style="left:20px; top:368px; color:#59636e" data-gt="text">Modified 14 Aug 2026, 19:42</div>
+  <div class="abs btn" style="left:20px; top:410px" data-gt="button">Open</div>
+  <div class="abs btn" style="left:96px; top:410px" data-gt="button">Share</div>
+</div>
+<div class="abs up" id="up" data-gt="panel" data-title="Uploads">
+  <div class="abs nowrap" style="left:16px; top:14px; font-weight:600" data-gt="text">Uploading 3 files</div>
+  <div class="abs nowrap" style="left:16px; top:40px; color:#59636e" data-gt="text">budget_2026.xlsx (2 of 3)</div>
+  <div class="abs prog" style="left:16px; top:72px; width:360px" data-gt="progressbar" data-value="64"><div style="width:64%"></div></div>
+  <div class="abs nowrap" style="left:394px; top:64px" data-gt="text">64%</div>
+</div>
+<div class="abs status" data-gt="panel"><span class="abs nowrap" style="left:16px; top:5px; color:#59636e" data-gt="text" id="stat">12 items, 1 selected</span></div>
+<div class="abs modal" id="modal" data-overlay="1" data-gt="window" data-title="Delete files">
+  <div class="abs" style="left:0; top:0; width:448px; height:40px; background:#eaeef2; border-bottom:1px solid #d0d7de; border-radius:8px 8px 0 0" data-gt="titlebar"><span class="abs nowrap" style="left:16px; top:10px; font-weight:600">Delete files</span>
+    <span class="abs" style="left:414px; top:10px" data-gt="icon" data-ignore="1"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M5 5l10 10M15 5L5 15" stroke="#24292f" stroke-width="2"/></svg></span></div>
+  <div class="abs nowrap" style="left:20px; top:62px" data-gt="text">Move 3 selected files to the Trash?</div>
+  <div class="abs nowrap" style="left:20px; top:88px; color:#59636e" data-gt="text">You can restore them for 30 days.</div>
+  <div class="abs btn" style="left:226px; top:136px" data-gt="button">Cancel</div>
+  <div class="abs btn danger" style="left:316px; top:136px" data-gt="button">Move to Trash</div>
+</div>
+<script>
+const FILES = [['Quarterly_Report_Q3.docx','248 KB','Today, 09:14'],['budget_2026.xlsx','1.2 MB','Today, 08:51'],['Lake_Sunset_0412.jpg','3.1 MB','14 Aug 2026'],
+ ['meeting-notes.txt','4 KB','12 Aug 2026'],['invoice_2026-114.pdf','86 KB','11 Aug 2026'],['slides_v3_final.pptx','5.4 MB','09 Aug 2026'],
+ ['contracts','-','02 Aug 2026'],['backup_0917.zip','212 MB','17 Jul 2026'],['logo_dark.png','64 KB','03 Jul 2026'],['README.md','2 KB','28 Jun 2026'],
+ ['photos_2025','-','30 Dec 2025'],['tax_return_2025.pdf','410 KB','12 Mar 2026']];
+const ICON = n => n.indexOf('.') < 0 ? '<path d="M2 5h7l2 3h11v12H2z" fill="#e3b341" stroke="#9a6700"/>' :
+  (n.endsWith('.jpg') || n.endsWith('.png')) ? '<rect x="2" y="4" width="20" height="16" fill="#9ecbff" stroke="#0969da"/><path d="M3 19l6-8 5 6 3-3 4 5z" fill="#1a7f37"/>' :
+  '<path d="M5 2h10l4 4v16H5z" fill="#fff" stroke="#57606a" stroke-width="1.5"/><path d="M8 11h8M8 15h8" stroke="#0969da" stroke-width="1.5"/>';
+function build(sel){
+  let h = '<div class="abs" style="left:1px; top:0; width:1098px; height:36px; background:#f6f8fa; border-bottom:1px solid #d0d7de">' +
+    '<span class="abs nowrap" style="left:48px; top:8px; font-weight:600" data-gt="text">Name</span><span class="abs nowrap" style="left:640px; top:8px; font-weight:600" data-gt="text">Size</span>' +
+    '<span class="abs nowrap" style="left:800px; top:8px; font-weight:600" data-gt="text">Modified</span></div>';
+  FILES.forEach((f, i) => {
+    h += `<div class="abs row ${sel.includes(i) ? 'sel' : ''}" style="top:${37 + i * 36}px" data-gt="listitem"><svg width="20" height="20" viewBox="0 0 24 24">${ICON(f[0])}</svg>` +
+      `<span class="c" style="left:48px">${f[0]}</span><span class="c" style="left:640px">${f[1]}</span><span class="c" style="left:800px">${f[2]}</span></div>`;
+  });
+  tbl.innerHTML = h;
+}
+function applyState(s){
+  if (s === 1) build([2]);
+  if (s >= 2) { build([0, 1, 3]); stat.textContent = '12 items, 3 selected'; up.style.display = 'block'; q.value = 'report'; q.classList.add('focus'); }
+  if (s >= 3) { modal.style.display = 'block'; q.classList.remove('focus'); }
+}
+</script><script src="gt.js"></script></body></html>

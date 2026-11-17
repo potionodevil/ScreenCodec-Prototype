@@ -1,0 +1,256 @@
+{
+ "source": "scene definitions (synth_gui.py) and the ground truth exported by the HTML test pages",
+ "events": [
+  {
+   "t": 0.0,
+   "what": "cursor moves to the Full name field"
+  },
+  {
+   "t": 1.5,
+   "what": "Full name field gets focus"
+  },
+  {
+   "t": 2.0,
+   "what": "typing 'Jonas Berger' into Full name (about 4 chars/s), done at t=4.75"
+  },
+  {
+   "t": 7.0,
+   "what": "'Enable notifications' checkbox becomes checked"
+  },
+  {
+   "t": 9.0,
+   "what": "Save button hovered, pressed at t=9.5"
+  },
+  {
+   "t": 10.0,
+   "what": "toast 'Settings saved' appears; window title changes to 'Settings - saved'"
+  },
+  {
+   "t": 16.0,
+   "what": "toast disappears"
+  }
+ ],
+ "answers": {
+  "screen1_q01": {
+   "answer": "Sign in to Northwind VPN",
+   "kind": "exact"
+  },
+  "screen1_q02": {
+   "answer": "Mail - Inbox",
+   "kind": "exact"
+  },
+  "screen1_q03": {
+   "answer": "yes",
+   "kind": "exact"
+  },
+  "screen1_q04": {
+   "answer": "no",
+   "kind": "exact"
+  },
+  "screen1_q05": {
+   "answer": "Connect",
+   "kind": "exact"
+  },
+  "screen1_q06": {
+   "answer": "mklein",
+   "kind": "exact"
+  },
+  "screen1_q07": {
+   "answer": "the Server field: vpn.northwind.io",
+   "kind": "exact"
+  },
+  "screen1_q08": {
+   "answer": "IT Desk - Password expires soon",
+   "kind": "exact"
+  },
+  "screen1_q09": {
+   "answer": "6",
+   "kind": "exact"
+  },
+  "screen1_q10": {
+   "answer": "right of (same row)",
+   "kind": "exact"
+  },
+  "screen1_q11": {
+   "answer": "Search mail",
+   "kind": "exact"
+  },
+  "screen1_q12": {
+   "answer": "the button 'Connect'",
+   "kind": "exact"
+  },
+  "screen1_q13": {
+   "answer": "12:21",
+   "kind": "exact"
+  },
+  "screen1_q14": {
+   "answer": "Reply",
+   "kind": "exact"
+  },
+  "screen2_q01": {
+   "answer": "Lake_Sunset_0412.jpg",
+   "kind": "exact"
+  },
+  "screen2_q02": {
+   "answer": "58%",
+   "kind": "exact"
+  },
+  "screen2_q03": {
+   "answer": "Uploading to cloud (7 of 12)",
+   "kind": "exact"
+  },
+  "screen2_q04": {
+   "answer": "yes",
+   "kind": "exact"
+  },
+  "screen2_q05": {
+   "answer": "no",
+   "kind": "exact"
+  },
+  "screen2_q06": {
+   "answer": "Battery low: 12% remaining",
+   "kind": "exact"
+  },
+  "screen2_q07": {
+   "answer": "bottom right",
+   "kind": "exact"
+  },
+  "screen2_q08": {
+   "answer": "Share",
+   "kind": "exact"
+  },
+  "screen2_q09": {
+   "answer": "left",
+   "kind": "exact"
+  },
+  "screen2_q10": {
+   "answer": "4032 x 3024",
+   "kind": "exact"
+  },
+  "screen2_q11": {
+   "answer": "File, Edit, View",
+   "kind": "exact"
+  },
+  "screen2_q12": {
+   "answer": "dark",
+   "kind": "exact",
+   "note": "theme colour of the screen"
+  },
+  "screen2_q13": {
+   "answer": "Photo Viewer",
+   "kind": "exact"
+  },
+  "screen3_q01": {
+   "answer": "Preferences",
+   "kind": "exact"
+  },
+  "screen3_q02": {
+   "answer": "General",
+   "kind": "exact"
+  },
+  "screen3_q03": {
+   "answer": "General, Appearance, Notifications, Privacy, Advanced",
+   "kind": "exact"
+  },
+  "screen3_q04": {
+   "answer": "Mara Klein",
+   "kind": "exact"
+  },
+  "screen3_q05": {
+   "answer": "English (United Kingdom)",
+   "kind": "exact"
+  },
+  "screen3_q06": {
+   "answer": "(UTC+01:00) Berlin, Vienna",
+   "kind": "exact"
+  },
+  "screen3_q07": {
+   "answer": "nothing; it shows the placeholder 'https://'",
+   "kind": "exact"
+  },
+  "screen3_q08": {
+   "answer": "no",
+   "kind": "exact"
+  },
+  "screen3_q09": {
+   "answer": "Open last project on start, Check for updates automatically",
+   "kind": "exact"
+  },
+  "screen3_q10": {
+   "answer": "6.8 GB of 10 GB (68%)",
+   "kind": "exact"
+  },
+  "screen3_q11": {
+   "answer": "Save changes",
+   "kind": "exact"
+  },
+  "screen3_q12": {
+   "answer": "left of (same row)",
+   "kind": "exact"
+  },
+  "screen3_q13": {
+   "answer": "Manage storage",
+   "kind": "exact"
+  },
+  "screen3_q14": {
+   "answer": "Acme Analytics (Dashboard page)",
+   "kind": "exact"
+  },
+  "sequence_workflow_q01": {
+   "answer": "'Jonas Berger' into the Full name field",
+   "kind": "exact"
+  },
+  "sequence_workflow_q02": {
+   "answer": "t=2.0 s",
+   "kind": "approx"
+  },
+  "sequence_workflow_q03": {
+   "answer": "t=5.0 s",
+   "kind": "approx"
+  },
+  "sequence_workflow_q04": {
+   "answer": "the 'Enable notifications' checkbox became checked (at t=7.0 s)",
+   "kind": "exact"
+  },
+  "sequence_workflow_q05": {
+   "answer": "Save",
+   "kind": "exact"
+  },
+  "sequence_workflow_q06": {
+   "answer": "a notification 'Settings saved' appeared and the window title changed to 'Settings - saved'",
+   "kind": "exact"
+  },
+  "sequence_workflow_q07": {
+   "answer": "Your profile was updated.",
+   "kind": "exact"
+  },
+  "sequence_workflow_q08": {
+   "answer": "6.0 s (t=10.0 to 16.0 s)",
+   "kind": "approx"
+  },
+  "sequence_workflow_q09": {
+   "answer": "nothing; placeholder 'Enter a value'",
+   "kind": "exact"
+  },
+  "sequence_workflow_q10": {
+   "answer": "Settings - saved",
+   "kind": "exact"
+  },
+  "sequence_workflow_q11": {
+   "answer": "no, it stays 'mara.klein@example.com'",
+   "kind": "exact"
+  },
+  "sequence_workflow_q12": {
+   "answer": "checked",
+   "kind": "exact"
+  },
+  "sequence_workflow_q13": {
+   "answer": "to the Full name field",
+   "kind": "exact"
+  },
+  "sequence_workflow_q14": {
+   "answer": "Jonas",
+   "kind": "exact"
+  }
+ }
+}

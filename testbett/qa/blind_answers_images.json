@@ -1,0 +1,222 @@
+{
+ "screen1_q01": {
+  "answer": "Sign in to Northwind VPN (dialog with blue title bar)",
+  "confidence": 0.97
+ },
+ "screen1_q02": {
+  "answer": "Mail - Inbox",
+  "confidence": 0.98
+ },
+ "screen1_q03": {
+  "answer": "Yes, checked",
+  "confidence": 0.98
+ },
+ "screen1_q04": {
+  "answer": "No, unchecked",
+  "confidence": 0.98
+ },
+ "screen1_q05": {
+  "answer": "Connect",
+  "confidence": 0.98
+ },
+ "screen1_q06": {
+  "answer": "mklein",
+  "confidence": 0.98
+ },
+ "screen1_q07": {
+  "answer": "Server field, contains vpn.northwind.io",
+  "confidence": 0.9
+ },
+ "screen1_q08": {
+  "answer": "IT Desk - Password expires soon",
+  "confidence": 0.98
+ },
+ "screen1_q09": {
+  "answer": "6",
+  "confidence": 0.97
+ },
+ "screen1_q10": {
+  "answer": "To the right of Connect, same row",
+  "confidence": 0.97
+ },
+ "screen1_q11": {
+  "answer": "Search mail",
+  "confidence": 0.97
+ },
+ "screen1_q12": {
+  "answer": "The Connect button of the VPN dialog (pointer tip at its lower edge)",
+  "confidence": 0.8
+ },
+ "screen1_q13": {
+  "answer": "12:21 (date 07.04.2026)",
+  "confidence": 0.97
+ },
+ "screen1_q14": {
+  "answer": "Reply",
+  "confidence": 0.95
+ },
+ "screen2_q01": {
+  "answer": "Lake_Sunset_0412.jpg",
+  "confidence": 0.98
+ },
+ "screen2_q02": {
+  "answer": "58%",
+  "confidence": 0.98
+ },
+ "screen2_q03": {
+  "answer": "Uploading to cloud (7 of 12)",
+  "confidence": 0.98
+ },
+ "screen2_q04": {
+  "answer": "Yes, checked",
+  "confidence": 0.97
+ },
+ "screen2_q05": {
+  "answer": "No, unchecked",
+  "confidence": 0.97
+ },
+ "screen2_q06": {
+  "answer": "Battery low - 12% remaining",
+  "confidence": 0.98
+ },
+ "screen2_q07": {
+  "answer": "Bottom right corner, above the taskbar",
+  "confidence": 0.97
+ },
+ "screen2_q08": {
+  "answer": "Share",
+  "confidence": 0.97
+ },
+ "screen2_q09": {
+  "answer": "Left of the file name",
+  "confidence": 0.97
+ },
+ "screen2_q10": {
+  "answer": "4032 x 3024",
+  "confidence": 0.98
+ },
+ "screen2_q11": {
+  "answer": "File, Edit, View",
+  "confidence": 0.98
+ },
+ "screen2_q12": {
+  "answer": "Dark",
+  "confidence": 0.97
+ },
+ "screen2_q13": {
+  "answer": "Photo Viewer",
+  "confidence": 0.98
+ },
+ "screen3_q01": {
+  "answer": "Preferences",
+  "confidence": 0.98
+ },
+ "screen3_q02": {
+  "answer": "General",
+  "confidence": 0.98
+ },
+ "screen3_q03": {
+  "answer": "General, Appearance, Notifications, Privacy, Advanced",
+  "confidence": 0.98
+ },
+ "screen3_q04": {
+  "answer": "Mara Klein",
+  "confidence": 0.98
+ },
+ "screen3_q05": {
+  "answer": "English (United Kingdom)",
+  "confidence": 0.98
+ },
+ "screen3_q06": {
+  "answer": "(UTC+01:00) Berlin, Vienna",
+  "confidence": 0.98
+ },
+ "screen3_q07": {
+  "answer": "Empty; shows only the placeholder https://",
+  "confidence": 0.85
+ },
+ "screen3_q08": {
+  "answer": "No, unchecked",
+  "confidence": 0.97
+ },
+ "screen3_q09": {
+  "answer": "Open last project on start; Check for updates automatically",
+  "confidence": 0.97
+ },
+ "screen3_q10": {
+  "answer": "6.8 GB of 10 GB",
+  "confidence": 0.98
+ },
+ "screen3_q11": {
+  "answer": "Save changes",
+  "confidence": 0.97
+ },
+ "screen3_q12": {
+  "answer": "To the left of Save changes, same row",
+  "confidence": 0.97
+ },
+ "screen3_q13": {
+  "answer": "Manage storage",
+  "confidence": 0.97
+ },
+ "screen3_q14": {
+  "answer": "Acme Analytics (Dashboard page)",
+  "confidence": 0.95
+ },
+ "sequence_workflow_q01": {
+  "answer": "Jonas Berger, typed into the Full name field",
+  "confidence": 0.97
+ },
+ "sequence_workflow_q02": {
+  "answer": "t = 2.0 s (frame f_004 shows 'J')",
+  "confidence": 0.9
+ },
+ "sequence_workflow_q03": {
+  "answer": "t = 5.0 s (frame f_010 first shows 'Jonas Berger')",
+  "confidence": 0.85
+ },
+ "sequence_workflow_q04": {
+  "answer": "The 'Enable notifications' checkbox changed from unchecked to checked (visible at t = 7.0 s)",
+  "confidence": 0.9
+ },
+ "sequence_workflow_q05": {
+  "answer": "Save",
+  "confidence": 0.85
+ },
+ "sequence_workflow_q06": {
+  "answer": "Settings were saved: window title changed to 'Settings - saved' and a 'Settings saved' notification appeared bottom right",
+  "confidence": 0.92
+ },
+ "sequence_workflow_q07": {
+  "answer": "Settings saved - Your profile was updated.",
+  "confidence": 0.97
+ },
+ "sequence_workflow_q08": {
+  "answer": "About 6 s (visible from t = 10.0 s through t = 15.5 s, gone at t = 16.0 s)",
+  "confidence": 0.85
+ },
+ "sequence_workflow_q09": {
+  "answer": "Empty, showing placeholder 'Enter a value'",
+  "confidence": 0.95
+ },
+ "sequence_workflow_q10": {
+  "answer": "Settings - saved",
+  "confidence": 0.97
+ },
+ "sequence_workflow_q11": {
+  "answer": "No, it stayed mara.klein@example.com",
+  "confidence": 0.95
+ },
+ "sequence_workflow_q12": {
+  "answer": "Checked (unchanged)",
+  "confidence": 0.95
+ },
+ "sequence_workflow_q13": {
+  "answer": "From the desktop at lower right (about 1505,810) into the Settings dialog, to an empty spot right of 'Send usage statistics' (about 1130,450)",
+  "confidence": 0.7
+ },
+ "sequence_workflow_q14": {
+  "answer": "Jonas",
+  "confidence": 0.9
+ }
+}

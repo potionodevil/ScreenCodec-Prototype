@@ -1,0 +1,57 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Checkout</title>
+<link rel="stylesheet" href="common.css">
+<style>
+body { background: #fafafa; font-family: "Roboto", "DejaVu Sans", sans-serif; }
+.hdr { left: 0; top: 0; width: 1920px; height: 72px; background: #fff; border-bottom: 1px solid #e0e0e0; }
+.step { top: 100px; height: 36px; }
+.card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; }
+.lbl { font-size: 13px; color: #555; }
+</style></head><body>
+<div class="abs hdr" data-gt="panel">
+  <span class="abs" style="left:32px; top:22px" data-gt="icon"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 4h2l3 12h11l2-8H7" fill="none" stroke="#e65100" stroke-width="2.2"/><circle cx="9" cy="20" r="1.8" fill="#e65100"/><circle cx="17" cy="20" r="1.8" fill="#e65100"/></svg></span>
+  <span class="abs nowrap" style="left:72px; top:23px; font-size:20px; font-weight:700" data-gt="text">Kiosk Market</span>
+  <span class="abs nowrap" style="left:1700px; top:26px" data-gt="text">Secure checkout</span>
+</div>
+<div class="abs nowrap" style="left:300px; top:108px; font-weight:700" data-gt="text">1 Cart</div>
+<div class="abs nowrap" style="left:420px; top:108px; font-weight:700; color:#e65100" data-gt="text">2 Shipping</div>
+<div class="abs nowrap" style="left:570px; top:108px; color:#888" data-gt="text">3 Payment</div>
+<div class="abs nowrap" style="left:710px; top:108px; color:#888" data-gt="text">4 Review</div>
+<div class="abs card" style="left:300px; top:160px; width:820px; height:640px" data-gt="panel">
+  <div class="abs nowrap" style="left:32px; top:28px; font-size:20px; font-weight:700" data-gt="text">Shipping address</div>
+  <div class="abs nowrap lbl" style="left:32px; top:80px" data-gt="text">First name</div>
+  <input class="abs tf" id="fn" style="left:32px; top:100px; width:360px" data-gt="textfield">
+  <div class="abs nowrap lbl" style="left:420px; top:80px" data-gt="text">Last name</div>
+  <input class="abs tf" id="ln" style="left:420px; top:100px; width:360px" data-gt="textfield">
+  <div class="abs nowrap lbl" style="left:32px; top:156px" data-gt="text">Street and number</div>
+  <input class="abs tf" id="st" style="left:32px; top:176px; width:748px" placeholder="e.g. Hauptstrasse 12" data-gt="textfield">
+  <div class="abs nowrap lbl" style="left:32px; top:232px" data-gt="text">Postal code</div>
+  <input class="abs tf" id="pc" style="left:32px; top:252px; width:160px" data-gt="textfield">
+  <div class="abs nowrap lbl" style="left:220px; top:232px" data-gt="text">City</div>
+  <input class="abs tf" id="ci" style="left:220px; top:252px; width:560px" data-gt="textfield">
+  <div class="abs nowrap lbl" style="left:32px; top:308px" data-gt="text">Country</div>
+  <select class="abs tf" style="left:32px; top:328px; width:360px" data-gt="textfield"><option>Germany</option></select>
+  <div class="abs nowrap" style="left:32px; top:396px; font-weight:700" data-gt="text">Delivery</div>
+  <label class="abs cb" style="left:32px; top:430px" data-gt="checkbox"><input type="checkbox" id="std" checked><span>Standard (3-5 days) - free</span></label>
+  <label class="abs cb" style="left:32px; top:462px" data-gt="checkbox"><input type="checkbox" id="exp"><span>Express (next day) - 9.90 EUR</span></label>
+  <label class="abs cb" style="left:32px; top:510px" data-gt="checkbox"><input type="checkbox" checked><span>Billing address is the same</span></label>
+  <div class="abs btn" style="left:32px; top:570px" data-gt="button">Back to cart</div>
+  <div class="abs btn primary" id="cont" style="left:600px; top:570px; width:180px; text-align:center; background:#e65100; border-color:#e65100" data-gt="button">Continue to payment</div>
+</div>
+<div class="abs card" style="left:1160px; top:160px; width:460px; height:420px" data-gt="panel">
+  <div class="abs nowrap" style="left:28px; top:26px; font-size:18px; font-weight:700" data-gt="text">Order summary</div>
+  <div class="abs nowrap" style="left:28px; top:76px" data-gt="text">Wireless headphones</div><div class="abs nowrap" style="left:360px; top:76px" data-gt="text">89.00 EUR</div>
+  <div class="abs nowrap" style="left:28px; top:108px" data-gt="text">USB-C cable (2 m)</div><div class="abs nowrap" style="left:360px; top:108px" data-gt="text">12.50 EUR</div>
+  <div class="abs nowrap" style="left:28px; top:140px" data-gt="text">Phone case</div><div class="abs nowrap" style="left:360px; top:140px" data-gt="text">19.90 EUR</div>
+  <div class="abs" style="left:28px; top:180px; width:404px; height:1px; background:#e0e0e0"></div>
+  <div class="abs nowrap" style="left:28px; top:196px" data-gt="text">Shipping</div><div class="abs nowrap" style="left:360px; top:196px" data-gt="text" id="ship">0.00 EUR</div>
+  <div class="abs nowrap" style="left:28px; top:236px; font-weight:700; font-size:16px" data-gt="text">Total</div><div class="abs nowrap" style="left:350px; top:236px; font-weight:700; font-size:16px" data-gt="text" id="tot">121.40 EUR</div>
+  <div class="abs nowrap" style="left:28px; top:290px; color:#555" data-gt="text">Promo code</div>
+  <input class="abs tf" style="left:28px; top:316px; width:280px" placeholder="Enter code" data-gt="textfield">
+  <div class="abs btn" style="left:322px; top:316px" data-gt="button">Apply</div>
+</div>
+<script>
+function applyState(s){
+  if (s >= 2) { fn.value = 'Mara'; ln.value = 'Klein'; st.value = 'Hauptstrasse 12'; pc.value = '20095'; ci.value = 'Hamburg'; ci.classList.add('focus');
+    std.checked = false; exp.checked = true; ship.textContent = '9.90 EUR'; tot.textContent = '131.30 EUR'; }
+}
+</script><script src="gt.js"></script></body></html>

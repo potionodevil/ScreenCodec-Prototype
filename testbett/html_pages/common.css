@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden; }
+body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 14px; color: #1f2328; position: relative; }
+.abs { position: absolute; }
+.nowrap { white-space: nowrap; }
+input.tf, select.tf { height: 34px; border: 1px solid #b6bcc4; border-radius: 6px; padding: 0 10px; font: inherit; font-size: 14px; background: #fff; color: #1f2328; outline: none; }
+input.tf::placeholder { color: #8a929b; }
+input.tf.focus, select.tf.focus { border: 2px solid #2f6fdf; box-shadow: 0 0 0 3px rgba(47,111,223,0.18); }
+.btn { display: inline-block; height: 34px; line-height: 32px; padding: 0 18px; border-radius: 6px; border: 1px solid #b6bcc4; background: #f6f8fa; font-size: 14px; color: #1f2328; white-space: nowrap; }
+.btn.primary { background: #2f6fdf; border-color: #2f6fdf; color: #fff; }
+.btn.danger { background: #d1242f; border-color: #d1242f; color: #fff; }
+.cb { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.cb input { width: 16px; height: 16px; margin: 0; accent-color: #2f6fdf; }
+.ico { display: inline-block; width: 20px; height: 20px; vertical-align: middle; }
+.prog { height: 10px; border-radius: 5px; background: #dfe3e8; overflow: hidden; }
+.prog > div { height: 100%; background: #2f6fdf; }
+.sel { background: #dbe8ff; }

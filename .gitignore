@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.cache/
+.venv/
+
+# Ausgaben der Testbett-Skripte
+testbett/out/
+*.wav
+*.png
+!ergebnisse/**/*.png
+!assets/**/*.png
+testbett/data/
+!testbett/html_pages/photo.png

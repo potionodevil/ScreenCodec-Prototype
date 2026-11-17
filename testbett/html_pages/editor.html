@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Editor</title>
+<link rel="stylesheet" href="common.css">
+<style>
+body { background: #1e1e1e; color: #d4d4d4; font-size: 13px; }
+.mono { font-family: "DejaVu Sans Mono", monospace; font-size: 14px; }
+.title { left: 0; top: 0; width: 1920px; height: 34px; background: #2d2d2d; border-bottom: 1px solid #111; }
+.act { left: 0; top: 34px; width: 48px; height: 1022px; background: #333333; }
+.side { left: 48px; top: 34px; width: 280px; height: 1022px; background: #252526; }
+.ti { left: 0; width: 280px; height: 24px; }
+.ti span { position: absolute; top: 3px; white-space: nowrap; }
+.tabs { left: 328px; top: 34px; width: 1592px; height: 36px; background: #252526; }
+.tab { top: 0; height: 36px; background: #2d2d2d; border-right: 1px solid #1e1e1e; }
+.tab.on { background: #1e1e1e; }
+.tab span { position: absolute; left: 14px; top: 9px; white-space: nowrap; }
+.code { left: 328px; top: 70px; width: 1592px; height: 986px; background: #1e1e1e; }
+.ln { position: absolute; left: 0; width: 50px; text-align: right; color: #858585; }
+.cl { position: absolute; left: 70px; white-space: pre; }
+.k { color: #569cd6; } .s { color: #ce9178; } .f { color: #dcdcaa; } .c { color: #6a9955; } .v { color: #9cdcfe; }
+.status { left: 0; top: 1056px; width: 1920px; height: 24px; background: #007acc; color: #fff; }
+.find { left: 1500px; top: 76px; width: 400px; height: 40px; background: #252526; border: 1px solid #454545; box-shadow: 0 2px 8px #000; display: none; }
+.find input { position: absolute; left: 8px; top: 6px; width: 250px; height: 26px; background: #3c3c3c; color: #ccc; border: 1px solid #007acc; font: 13px "Noto Sans", sans-serif; padding: 0 6px; outline: none; }
+</style></head><body>
+<div class="abs title" data-gt="panel"><span class="abs nowrap" style="left:860px; top:8px; color:#cccccc" data-gt="text" id="ttl">App.jsx - dashboard - Code</span></div>
+<div class="abs act" data-gt="panel">
+  <span class="abs" style="left:12px; top:14px" data-gt="icon"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M5 2h10l4 4v16H5z" fill="none" stroke="#cccccc" stroke-width="1.6"/></svg></span>
+  <span class="abs" style="left:12px; top:62px" data-gt="icon"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6" fill="none" stroke="#858585" stroke-width="2"/><path d="M15 15l6 6" stroke="#858585" stroke-width="2"/></svg></span>
+  <span class="abs" style="left:12px; top:110px" data-gt="icon"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5" fill="none" stroke="#858585" stroke-width="2"/><circle cx="6" cy="18" r="2.5" fill="none" stroke="#858585" stroke-width="2"/><circle cx="18" cy="9" r="2.5" fill="none" stroke="#858585" stroke-width="2"/><path d="M6 8.5v7M18 11.5c0 4-12 2-12 4" fill="none" stroke="#858585" stroke-width="2"/></svg></span>
+</div>
+<div class="abs side" data-gt="panel" data-title="Explorer">
+  <div class="abs" style="left:0; top:40px; width:280px; height:192px" data-gt="list" data-title="Files"></div>
+  <span class="abs nowrap" style="left:20px; top:10px; font-size:11px; color:#bbbbbb" data-gt="text">EXPLORER</span>
+  <div class="abs ti" style="top:40px" data-gt="listitem"><span style="left:20px">src</span></div>
+  <div class="abs ti" style="top:64px" data-gt="listitem"><span style="left:36px">components</span></div>
+  <div class="abs ti sel" style="top:88px; background:#37373d" data-gt="listitem"><span style="left:36px">App.jsx</span></div>
+  <div class="abs ti" style="top:112px" data-gt="listitem"><span style="left:36px">api.js</span></div>
+  <div class="abs ti" style="top:136px" data-gt="listitem"><span style="left:36px">index.css</span></div>
+  <div class="abs ti" style="top:160px" data-gt="listitem"><span style="left:36px">main.jsx</span></div>
+  <div class="abs ti" style="top:184px" data-gt="listitem"><span style="left:20px">package.json</span></div>
+  <div class="abs ti" style="top:208px" data-gt="listitem"><span style="left:20px">README.md</span></div>
+</div>
+<div class="abs tabs">
+  <div class="abs tab on" style="left:0; width:150px" data-gt="button"><span id="tab1">App.jsx</span></div>
+  <div class="abs tab" style="left:151px; width:130px" data-gt="button"><span>api.js</span></div>
+</div>
+<div class="abs code mono" id="code"></div>
+<div class="abs find" id="findw" data-overlay="1" data-gt="panel" data-title="Find"><input id="fq" value="useState" data-gt="textfield" class="focus"><span class="abs nowrap" style="left:272px; top:11px; color:#cccccc" data-gt="text">2 of 5</span></div>
+<div class="abs status" data-gt="panel"><span class="abs nowrap" style="left:12px; top:3px" data-gt="text">main</span><span class="abs nowrap" style="left:1650px; top:3px" data-gt="text" id="pos">Ln 12, Col 18</span><span class="abs nowrap" style="left:1800px; top:3px" data-gt="text">JavaScript JSX</span></div>
+<script>
+const CODE = [
+ '<span class="k">import</span> { useState, useEffect } <span class="k">from</span> <span class="s">\'react\'</span>;',
+ '<span class="k">import</span> { fetchSales } <span class="k">from</span> <span class="s">\'./api\'</span>;',
+ '',
+ '<span class="c">// Monthly sales dashboard</span>',
+ '<span class="k">export default function</span> <span class="f">App</span>() {',
+ '  <span class="k">const</span> [<span class="v">rows</span>, <span class="v">setRows</span>] = <span class="f">useState</span>([]);',
+ '  <span class="k">const</span> [<span class="v">year</span>, <span class="v">setYear</span>] = <span class="f">useState</span>(2026);',
+ '',
+ '  <span class="f">useEffect</span>(() => {',
+ '    <span class="f">fetchSales</span>(<span class="v">year</span>).<span class="f">then</span>(<span class="v">setRows</span>);',
+ '  }, [<span class="v">year</span>]);',
+ '',
+ '  <span class="k">const</span> <span class="v">total</span> = <span class="v">rows</span>.<span class="f">reduce</span>((<span class="v">a</span>, <span class="v">r</span>) => <span class="v">a</span> + <span class="v">r</span>.<span class="v">amount</span>, 0);',
+ '  <span class="k">return</span> (',
+ '    &lt;<span class="k">main</span> <span class="v">className</span>=<span class="s">"dash"</span>&gt;',
+ '      &lt;<span class="k">h1</span>&gt;Sales {<span class="v">year</span>}&lt;/<span class="k">h1</span>&gt;',
+ '      &lt;<span class="k">p</span>&gt;Total: {<span class="v">total</span>.<span class="f">toFixed</span>(2)} EUR&lt;/<span class="k">p</span>&gt;',
+ '    &lt;/<span class="k">main</span>&gt;',
+ '  );',
+ '}'];
+function build(lines){
+  let h = '';
+  lines.forEach((l, i) => {
+    const y = 10 + i * 22;
+    h += `<span class="ln" style="top:${y}px" data-gt="text">${i + 1}</span>`;
+    if (l.trim()) h += `<span class="cl" style="top:${y}px" data-gt="text">${l}</span>`;
+  });
+  code.innerHTML = h;
+}
+function applyState(s){
+  const lines = CODE.slice();
+  if (s >= 2) { lines.splice(13, 0, '  <span class="k">const</span> <span class="v">avg</span> = <span class="v">total</span> / <span class="f">Math</span>.<span class="f">max</span>(1, <span class="v">rows</span>.<span class="v">length</span>);');
+                tab1.textContent = 'App.jsx ●'; pos.textContent = 'Ln 14, Col 62'; }
+  if (s >= 3) { findw.style.display = "block"; }
+  build(lines);
+}
+</script><script src="gt.js"></script></body></html>

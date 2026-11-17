@@ -1,0 +1,41 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Sign in</title>
+<link rel="stylesheet" href="common.css">
+<style>
+body { background: linear-gradient(160deg, #e9eef6 0%, #c9d6ea 100%); }
+.top { left: 0; top: 0; width: 1920px; height: 64px; background: #ffffff; border-bottom: 1px solid #d0d7de; }
+.card { left: 735px; top: 170px; width: 450px; height: 620px; background: #fff; border-radius: 12px; border: 1px solid #d0d7de; box-shadow: 0 8px 24px rgba(31,35,40,0.12); }
+.card h1 { font-size: 24px; font-weight: 600; margin: 0; }
+.lbl { font-size: 14px; font-weight: 600; }
+.err { left: 40px; top: 150px; width: 370px; height: 44px; border-radius: 6px; background: #ffebe9; border: 1px solid #ff8182; color: #82071e; display: none; }
+.link { color: #0969da; }
+</style></head><body>
+<div class="abs top" data-gt="panel">
+  <span class="abs" style="left:24px; top:18px" data-gt="icon"><svg width="28" height="28" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#2f6fdf"/><path d="M6 15l4-7 3 5 2-3 3 5z" fill="#fff"/></svg></span>
+  <span class="abs nowrap" style="left:64px; top:20px; font-size:18px; font-weight:600" data-gt="text">Northwind Portal</span>
+  <span class="abs nowrap" style="left:1660px; top:22px" data-gt="text">Help</span>
+  <span class="abs nowrap" style="left:1730px; top:22px" data-gt="text">Contact sales</span>
+</div>
+<div class="abs card" data-gt="panel" data-title="Sign in">
+  <h1 class="abs nowrap" style="left:40px; top:40px" data-gt="text">Sign in to Northwind</h1>
+  <div class="abs nowrap" style="left:40px; top:84px; color:#59636e" data-gt="text">Use your work account to continue.</div>
+  <div class="abs err" id="err"><span class="abs nowrap" style="left:14px; top:11px" data-gt="text">Incorrect password. 2 attempts left.</span></div>
+  <div class="abs nowrap lbl" style="left:40px; top:214px" data-gt="text">Email address</div>
+  <input class="abs tf" id="email" style="left:40px; top:240px; width:370px" placeholder="name@company.com" data-gt="textfield">
+  <div class="abs nowrap lbl" style="left:40px; top:300px" data-gt="text">Password</div>
+  <span class="abs nowrap link" style="left:290px; top:300px" data-gt="text">Forgot password?</span>
+  <input class="abs tf" id="pw" type="password" style="left:40px; top:326px; width:370px" placeholder="Password" data-gt="textfield">
+  <label class="abs cb" style="left:40px; top:386px" data-gt="checkbox"><input type="checkbox" id="rem"><span>Remember me</span></label>
+  <label class="abs cb" style="left:40px; top:416px" data-gt="checkbox"><input type="checkbox" id="trust" checked><span>Trust this device for 30 days</span></label>
+  <div class="abs btn primary" id="go" style="left:40px; top:466px; width:370px; text-align:center" data-gt="button">Sign in</div>
+  <div class="abs btn" style="left:40px; top:516px; width:370px; text-align:center" data-gt="button">Sign in with SSO</div>
+  <div class="abs nowrap" style="left:40px; top:574px; color:#59636e" data-gt="text">New here? <span class="link">Create an account</span></div>
+</div>
+<div class="abs nowrap" style="left:760px; top:1030px; color:#59636e" data-gt="text">Terms of use</div>
+<div class="abs nowrap" style="left:880px; top:1030px; color:#59636e" data-gt="text">Privacy</div>
+<div class="abs nowrap" style="left:960px; top:1030px; color:#59636e" data-gt="text">© 2026 Northwind Traders</div>
+<script>
+function applyState(s){
+  if (s >= 2) { email.value = 'mara.klein@northwind.io'; pw.value = 'hunter2hunter2'; rem.checked = true; pw.classList.add('focus'); }
+  if (s >= 3) { err.style.display = 'block'; pw.classList.remove('focus'); pw.value = ''; pw.classList.add('focus'); go.textContent = 'Signing in...'; }
+}
+</script><script src="gt.js"></script></body></html>

@@ -1,0 +1,72 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Mail</title>
+<link rel="stylesheet" href="common.css">
+<style>
+body { background: #fff; font-family: "Liberation Sans", "DejaVu Sans", sans-serif; }
+.top { left: 0; top: 0; width: 1920px; height: 52px; background: #0f6cbd; color: #fff; }
+.nav { left: 0; top: 52px; width: 240px; height: 1028px; background: #f3f2f1; border-right: 1px solid #e1dfdd; }
+.fi { left: 8px; width: 224px; height: 30px; border-radius: 4px; }
+.fi span { position: absolute; left: 14px; top: 6px; white-space: nowrap; }
+.fi b { position: absolute; right: 12px; top: 6px; font-weight: 600; }
+.msgs { left: 240px; top: 52px; width: 560px; height: 1028px; border-right: 1px solid #e1dfdd; background: #fff; }
+.m { left: 0; width: 560px; height: 72px; border-bottom: 1px solid #edebe9; }
+.m .f { position: absolute; left: 20px; top: 10px; font-weight: 600; white-space: nowrap; }
+.m .s { position: absolute; left: 20px; top: 30px; white-space: nowrap; }
+.m .d { position: absolute; left: 470px; top: 10px; color: #605e5c; white-space: nowrap; }
+.m .p { position: absolute; left: 20px; top: 50px; color: #605e5c; font-size: 12px; white-space: nowrap; }
+.read { left: 800px; top: 52px; width: 1120px; height: 1028px; }
+.unread { border-left: 3px solid #0f6cbd; }
+.sel2 { background: #cfe4fa; }
+</style></head><body>
+<div class="abs top" data-gt="panel">
+  <span class="abs nowrap" style="left:20px; top:15px; font-size:17px; font-weight:600" data-gt="text">Mail Lite</span>
+  <input class="abs tf" style="left:560px; top:9px; width:640px; height:34px" placeholder="Search mail and people" data-gt="textfield">
+  <div class="abs btn" style="left:1700px; top:9px; background:#fff" data-gt="button">New message</div>
+</div>
+<div class="abs nav" data-gt="panel">
+  <div class="abs fi sel2" style="top:16px" data-gt="listitem"><span>Inbox</span><b>12</b></div>
+  <div class="abs fi" style="top:50px" data-gt="listitem"><span>Drafts</span><b>2</b></div>
+  <div class="abs fi" style="top:84px" data-gt="listitem"><span>Sent Items</span></div>
+  <div class="abs fi" style="top:118px" data-gt="listitem"><span>Archive</span></div>
+  <div class="abs fi" style="top:152px" data-gt="listitem"><span>Junk Email</span><b>5</b></div>
+  <div class="abs" style="left:8px; top:16px; width:224px; height:166px" data-gt="list"></div>
+</div>
+<div class="abs msgs" data-gt="list" id="msgs"></div>
+<div class="abs read" data-gt="panel">
+  <div class="abs nowrap" style="left:32px; top:28px; font-size:22px" data-gt="text" id="subj">Q3 budget review - final numbers</div>
+  <div class="abs nowrap" style="left:32px; top:76px; font-weight:600" data-gt="text" id="from">Grace Liu</div>
+  <div class="abs nowrap" style="left:32px; top:98px; color:#605e5c" data-gt="text">To: Finance Team; Mara Klein</div>
+  <div class="abs nowrap" style="left:900px; top:76px; color:#605e5c" data-gt="text" id="when">Tue 17.11.2026 09:12</div>
+  <div class="abs nowrap" style="left:32px; top:150px" data-gt="text">Hi all,</div>
+  <div class="abs nowrap" style="left:32px; top:182px" data-gt="text">attached are the final Q3 numbers. Revenue is up 4.2% against plan,</div>
+  <div class="abs nowrap" style="left:32px; top:204px" data-gt="text">travel costs are 11% over budget. Please review before Thursday.</div>
+  <div class="abs nowrap" style="left:32px; top:236px" data-gt="text">Best, Grace</div>
+  <div class="abs" style="left:32px; top:280px; width:260px; height:56px; border:1px solid #c8c6c4; border-radius:4px" data-gt="panel">
+    <span class="abs" style="left:12px; top:14px" data-gt="icon"><svg width="26" height="26" viewBox="0 0 24 24"><rect x="3" y="2" width="18" height="20" fill="#107c41"/><path d="M8 7l8 10M16 7l-8 10" stroke="#fff" stroke-width="2"/></svg></span>
+    <span class="abs nowrap" style="left:50px; top:9px" data-gt="text">Q3_budget_final.xlsx</span>
+    <span class="abs nowrap" style="left:50px; top:29px; color:#605e5c; font-size:12px" data-gt="text">184 KB</span>
+  </div>
+  <div class="abs btn primary" style="left:32px; top:370px; background:#0f6cbd; border-color:#0f6cbd" data-gt="button">Reply</div>
+  <div class="abs btn" style="left:116px; top:370px" data-gt="button">Reply all</div>
+  <div class="abs btn" style="left:220px; top:370px" data-gt="button">Forward</div>
+  <textarea class="abs" id="reply" style="left:32px; top:430px; width:900px; height:160px; border:1px solid #8a8886; border-radius:4px; font:14px 'Liberation Sans'; padding:10px; display:none" data-gt="textfield"></textarea>
+</div>
+<script>
+const M = [['Grace Liu','Q3 budget review - final numbers','09:12','attached are the final Q3 numbers.'],
+ ['Ben Ortiz','Lunch on Thursday?','08:47','Usual place at 12:30?'],
+ ['IT Service Desk','Password expires in 3 days','Mon','Change your password before 20.11.'],
+ ['Clara Novak','Slides v3 for the offsite','Mon','I moved the roadmap to slide 4.'],
+ ['Northwind News','November newsletter','Sun','New office in Hamburg opens in March.'],
+ ['David Kim','Re: Contract renewal','Fri','Legal approved the draft.'],
+ ['Elif Yilmaz','Design review notes','Fri','Three open questions on the onboarding.'],
+ ['Calendar','Invitation: Sprint planning','Thu','Wed 25.11.2026 10:00 - 11:00']];
+function applyState(s){
+  let h = '';
+  M.forEach((m, i) => {
+    const cls = (s === 1 ? i === 0 : i === 1) ? 'sel2' : (i < 3 ? 'unread' : '');
+    h += `<div class="abs m ${cls}" style="top:${i * 72}px" data-gt="listitem"><span class="f">${m[0]}</span><span class="d">${m[2]}</span><span class="s">${m[1]}</span><span class="p">${m[3]}</span></div>`;
+  });
+  msgs.innerHTML = h;
+  if (s >= 2) { subj.textContent = 'Lunch on Thursday?'; from.textContent = 'Ben Ortiz'; when.textContent = 'Tue 17.11.2026 08:47';
+    reply.style.display = 'block'; reply.value = 'Sounds good, see you at 12:30.'; reply.classList.add('focus'); }
+}
+</script><script src="gt.js"></script></body></html>

@@ -1,0 +1,294 @@
+{
+ "instructions": "Answer each question about the input named in 'input' (see 'inputs' for the matching images). Answer 'unknown' if the input does not show it.",
+ "inputs": {
+  "screen1": [
+   "data/qa_scenes/qa_mail.png"
+  ],
+  "screen2": [
+   "data/qa_scenes/qa_media.png"
+  ],
+  "screen3": [
+   "data/html/settings_s1.png"
+  ],
+  "sequence_workflow": [
+   "data/seq/workflow/f_000.png ... f_039.png (2 FPS)"
+  ]
+ },
+ "questions": [
+  {
+   "id": "screen1_q01",
+   "input": "screen1",
+   "question": "Which window is in front (active)?"
+  },
+  {
+   "id": "screen1_q02",
+   "input": "screen1",
+   "question": "What is the title of the other window, the one behind?"
+  },
+  {
+   "id": "screen1_q03",
+   "input": "screen1",
+   "question": "Is the 'Remember me' checkbox checked?"
+  },
+  {
+   "id": "screen1_q04",
+   "input": "screen1",
+   "question": "Is the 'Use smart card' checkbox checked?"
+  },
+  {
+   "id": "screen1_q05",
+   "input": "screen1",
+   "question": "What text is on the primary (highlighted) button of the front dialog?"
+  },
+  {
+   "id": "screen1_q06",
+   "input": "screen1",
+   "question": "What is entered in the Username field?"
+  },
+  {
+   "id": "screen1_q07",
+   "input": "screen1",
+   "question": "Which input field has the keyboard focus, and what does it contain?"
+  },
+  {
+   "id": "screen1_q08",
+   "input": "screen1",
+   "question": "Which message is selected in the inbox list?"
+  },
+  {
+   "id": "screen1_q09",
+   "input": "screen1",
+   "question": "How many messages are visible in the inbox list?"
+  },
+  {
+   "id": "screen1_q10",
+   "input": "screen1",
+   "question": "Where is the Cancel button of the front dialog relative to its primary button?"
+  },
+  {
+   "id": "screen1_q11",
+   "input": "screen1",
+   "question": "What placeholder text does the search field of the mail window show?"
+  },
+  {
+   "id": "screen1_q12",
+   "input": "screen1",
+   "question": "What is under the mouse pointer?"
+  },
+  {
+   "id": "screen1_q13",
+   "input": "screen1",
+   "question": "What time does the taskbar clock show?"
+  },
+  {
+   "id": "screen1_q14",
+   "input": "screen1",
+   "question": "Which button of the mail window is the primary one?"
+  },
+  {
+   "id": "screen2_q01",
+   "input": "screen2",
+   "question": "What is the file name of the photo that is shown?"
+  },
+  {
+   "id": "screen2_q02",
+   "input": "screen2",
+   "question": "What percentage does the progress bar show?"
+  },
+  {
+   "id": "screen2_q03",
+   "input": "screen2",
+   "question": "What text is shown directly above the progress bar?"
+  },
+  {
+   "id": "screen2_q04",
+   "input": "screen2",
+   "question": "Is 'Auto-enhance' enabled?"
+  },
+  {
+   "id": "screen2_q05",
+   "input": "screen2",
+   "question": "Is 'Show location' enabled?"
+  },
+  {
+   "id": "screen2_q06",
+   "input": "screen2",
+   "question": "What does the notification say?"
+  },
+  {
+   "id": "screen2_q07",
+   "input": "screen2",
+   "question": "In which part of the screen is the notification?"
+  },
+  {
+   "id": "screen2_q08",
+   "input": "screen2",
+   "question": "What text is on the primary button?"
+  },
+  {
+   "id": "screen2_q09",
+   "input": "screen2",
+   "question": "Is the photo to the left or to the right of its file name?"
+  },
+  {
+   "id": "screen2_q10",
+   "input": "screen2",
+   "question": "What are the pixel dimensions of the photo according to the window?"
+  },
+  {
+   "id": "screen2_q11",
+   "input": "screen2",
+   "question": "Which entries does the window's menu bar have?"
+  },
+  {
+   "id": "screen2_q12",
+   "input": "screen2",
+   "question": "Does the desktop use a dark or a light theme?"
+  },
+  {
+   "id": "screen2_q13",
+   "input": "screen2",
+   "question": "What is the title of the window?"
+  },
+  {
+   "id": "screen3_q01",
+   "input": "screen3",
+   "question": "What is the title of the dialog?"
+  },
+  {
+   "id": "screen3_q02",
+   "input": "screen3",
+   "question": "Which section is selected in the sidebar?"
+  },
+  {
+   "id": "screen3_q03",
+   "input": "screen3",
+   "question": "List the sidebar sections from top to bottom."
+  },
+  {
+   "id": "screen3_q04",
+   "input": "screen3",
+   "question": "What display name is entered?"
+  },
+  {
+   "id": "screen3_q05",
+   "input": "screen3",
+   "question": "Which language is selected?"
+  },
+  {
+   "id": "screen3_q06",
+   "input": "screen3",
+   "question": "What is the selected time zone?"
+  },
+  {
+   "id": "screen3_q07",
+   "input": "screen3",
+   "question": "What does the 'Start page' field contain?"
+  },
+  {
+   "id": "screen3_q08",
+   "input": "screen3",
+   "question": "Is 'Send anonymous usage data' checked?"
+  },
+  {
+   "id": "screen3_q09",
+   "input": "screen3",
+   "question": "Which checkboxes are checked?"
+  },
+  {
+   "id": "screen3_q10",
+   "input": "screen3",
+   "question": "How much storage is used?"
+  },
+  {
+   "id": "screen3_q11",
+   "input": "screen3",
+   "question": "What text is on the primary button?"
+  },
+  {
+   "id": "screen3_q12",
+   "input": "screen3",
+   "question": "Where is the Apply button relative to the 'Save changes' button?"
+  },
+  {
+   "id": "screen3_q13",
+   "input": "screen3",
+   "question": "Which button is directly below the storage bar?"
+  },
+  {
+   "id": "screen3_q14",
+   "input": "screen3",
+   "question": "What application is visible behind the dialog?"
+  },
+  {
+   "id": "sequence_workflow_q01",
+   "input": "sequence_workflow",
+   "question": "What did the user type, and into which field?"
+  },
+  {
+   "id": "sequence_workflow_q02",
+   "input": "sequence_workflow",
+   "question": "At what time did the typed text first appear?"
+  },
+  {
+   "id": "sequence_workflow_q03",
+   "input": "sequence_workflow",
+   "question": "When was the typing finished?"
+  },
+  {
+   "id": "sequence_workflow_q04",
+   "input": "sequence_workflow",
+   "question": "What changed between t=6.5 s and t=7.5 s?"
+  },
+  {
+   "id": "sequence_workflow_q05",
+   "input": "sequence_workflow",
+   "question": "Which button did the user press?"
+  },
+  {
+   "id": "sequence_workflow_q06",
+   "input": "sequence_workflow",
+   "question": "What happened at t=10 s?"
+  },
+  {
+   "id": "sequence_workflow_q07",
+   "input": "sequence_workflow",
+   "question": "What does the notification message say?"
+  },
+  {
+   "id": "sequence_workflow_q08",
+   "input": "sequence_workflow",
+   "question": "For how long was the notification visible?"
+  },
+  {
+   "id": "sequence_workflow_q09",
+   "input": "sequence_workflow",
+   "question": "What was in the Full name field at the start?"
+  },
+  {
+   "id": "sequence_workflow_q10",
+   "input": "sequence_workflow",
+   "question": "What is the final title of the window?"
+  },
+  {
+   "id": "sequence_workflow_q11",
+   "input": "sequence_workflow",
+   "question": "Did the Email field change during the sequence?"
+  },
+  {
+   "id": "sequence_workflow_q12",
+   "input": "sequence_workflow",
+   "question": "What is the final state of 'Start at login'?"
+  },
+  {
+   "id": "sequence_workflow_q13",
+   "input": "sequence_workflow",
+   "question": "Where did the mouse pointer go first?"
+  },
+  {
+   "id": "sequence_workflow_q14",
+   "input": "sequence_workflow",
+   "question": "What text was in the Full name field at t=3.0 s?"
+  }
+ ]
+}

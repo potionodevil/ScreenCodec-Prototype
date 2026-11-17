@@ -1,0 +1,222 @@
+{
+ "screen1_q01": {
+  "answer": "The Sign in dialog",
+  "confidence": 0.6
+ },
+ "screen1_q02": {
+  "answer": "Inbox - Mail",
+  "confidence": 0.2
+ },
+ "screen1_q03": {
+  "answer": "Yes, checked",
+  "confidence": 0.55
+ },
+ "screen1_q04": {
+  "answer": "No, unchecked",
+  "confidence": 0.6
+ },
+ "screen1_q05": {
+  "answer": "Sign in",
+  "confidence": 0.5
+ },
+ "screen1_q06": {
+  "answer": "j.doe",
+  "confidence": 0.05
+ },
+ "screen1_q07": {
+  "answer": "Password field, contains masked dots",
+  "confidence": 0.45
+ },
+ "screen1_q08": {
+  "answer": "Quarterly report",
+  "confidence": 0.05
+ },
+ "screen1_q09": {
+  "answer": "5",
+  "confidence": 0.15
+ },
+ "screen1_q10": {
+  "answer": "To the left of the primary button",
+  "confidence": 0.55
+ },
+ "screen1_q11": {
+  "answer": "Search mail",
+  "confidence": 0.3
+ },
+ "screen1_q12": {
+  "answer": "The Sign in button",
+  "confidence": 0.3
+ },
+ "screen1_q13": {
+  "answer": "09:41",
+  "confidence": 0.05
+ },
+ "screen1_q14": {
+  "answer": "New message",
+  "confidence": 0.2
+ },
+ "screen2_q01": {
+  "answer": "IMG_2041.jpg",
+  "confidence": 0.03
+ },
+ "screen2_q02": {
+  "answer": "64%",
+  "confidence": 0.05
+ },
+ "screen2_q03": {
+  "answer": "Uploading...",
+  "confidence": 0.15
+ },
+ "screen2_q04": {
+  "answer": "Yes, enabled",
+  "confidence": 0.55
+ },
+ "screen2_q05": {
+  "answer": "No, disabled",
+  "confidence": 0.55
+ },
+ "screen2_q06": {
+  "answer": "Upload complete",
+  "confidence": 0.1
+ },
+ "screen2_q07": {
+  "answer": "Top right corner",
+  "confidence": 0.45
+ },
+ "screen2_q08": {
+  "answer": "Export",
+  "confidence": 0.2
+ },
+ "screen2_q09": {
+  "answer": "Left",
+  "confidence": 0.55
+ },
+ "screen2_q10": {
+  "answer": "4032 x 3024",
+  "confidence": 0.15
+ },
+ "screen2_q11": {
+  "answer": "File, Edit, View, Help",
+  "confidence": 0.35
+ },
+ "screen2_q12": {
+  "answer": "Dark",
+  "confidence": 0.55
+ },
+ "screen2_q13": {
+  "answer": "Photos",
+  "confidence": 0.2
+ },
+ "screen3_q01": {
+  "answer": "Settings",
+  "confidence": 0.4
+ },
+ "screen3_q02": {
+  "answer": "General",
+  "confidence": 0.45
+ },
+ "screen3_q03": {
+  "answer": "General, Account, Privacy, Notifications, Storage, Advanced",
+  "confidence": 0.05
+ },
+ "screen3_q04": {
+  "answer": "Alex Morgan",
+  "confidence": 0.03
+ },
+ "screen3_q05": {
+  "answer": "English (US)",
+  "confidence": 0.35
+ },
+ "screen3_q06": {
+  "answer": "Europe/Berlin (UTC+01:00)",
+  "confidence": 0.2
+ },
+ "screen3_q07": {
+  "answer": "https://example.com",
+  "confidence": 0.15
+ },
+ "screen3_q08": {
+  "answer": "No, unchecked",
+  "confidence": 0.55
+ },
+ "screen3_q09": {
+  "answer": "Check for updates automatically; Show notifications",
+  "confidence": 0.1
+ },
+ "screen3_q10": {
+  "answer": "3.2 GB of 15 GB",
+  "confidence": 0.05
+ },
+ "screen3_q11": {
+  "answer": "Save changes",
+  "confidence": 0.65
+ },
+ "screen3_q12": {
+  "answer": "To the left of Save changes",
+  "confidence": 0.55
+ },
+ "screen3_q13": {
+  "answer": "Manage storage",
+  "confidence": 0.25
+ },
+ "screen3_q14": {
+  "answer": "A text editor",
+  "confidence": 0.1
+ },
+ "sequence_workflow_q01": {
+  "answer": "Jane Smith, into the Full name field",
+  "confidence": 0.1
+ },
+ "sequence_workflow_q02": {
+  "answer": "t=2.5 s",
+  "confidence": 0.15
+ },
+ "sequence_workflow_q03": {
+  "answer": "t=5.0 s",
+  "confidence": 0.15
+ },
+ "sequence_workflow_q04": {
+  "answer": "The Start at login checkbox became checked",
+  "confidence": 0.3
+ },
+ "sequence_workflow_q05": {
+  "answer": "Save",
+  "confidence": 0.4
+ },
+ "sequence_workflow_q06": {
+  "answer": "A notification appeared saying the settings were saved",
+  "confidence": 0.3
+ },
+ "sequence_workflow_q07": {
+  "answer": "Settings saved",
+  "confidence": 0.25
+ },
+ "sequence_workflow_q08": {
+  "answer": "3 seconds",
+  "confidence": 0.2
+ },
+ "sequence_workflow_q09": {
+  "answer": "Empty",
+  "confidence": 0.4
+ },
+ "sequence_workflow_q10": {
+  "answer": "Settings",
+  "confidence": 0.15
+ },
+ "sequence_workflow_q11": {
+  "answer": "No",
+  "confidence": 0.65
+ },
+ "sequence_workflow_q12": {
+  "answer": "Checked (on)",
+  "confidence": 0.55
+ },
+ "sequence_workflow_q13": {
+  "answer": "To the Full name field",
+  "confidence": 0.5
+ },
+ "sequence_workflow_q14": {
+  "answer": "Ja (partially typed)",
+  "confidence": 0.05
+ }
+}

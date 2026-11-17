@@ -1,0 +1,222 @@
+{
+ "screen1_q01": {
+  "answer": "Sign in to Northwind VPN",
+  "confidence": 0.97
+ },
+ "screen1_q02": {
+  "answer": "Mail - Inbox",
+  "confidence": 0.97
+ },
+ "screen1_q03": {
+  "answer": "Yes, checked",
+  "confidence": 0.95
+ },
+ "screen1_q04": {
+  "answer": "No, unchecked",
+  "confidence": 0.95
+ },
+ "screen1_q05": {
+  "answer": "Connect",
+  "confidence": 0.93
+ },
+ "screen1_q06": {
+  "answer": "mklein",
+  "confidence": 0.93
+ },
+ "screen1_q07": {
+  "answer": "The Server field; it contains vpn.northwind.io",
+  "confidence": 0.92
+ },
+ "screen1_q08": {
+  "answer": "IT Desk - Password expires soon",
+  "confidence": 0.95
+ },
+ "screen1_q09": {
+  "answer": "6",
+  "confidence": 0.93
+ },
+ "screen1_q10": {
+  "answer": "To the right of Connect, on the same row",
+  "confidence": 0.92
+ },
+ "screen1_q11": {
+  "answer": "Search mail",
+  "confidence": 0.95
+ },
+ "screen1_q12": {
+  "answer": "The Connect button of the VPN sign-in dialog",
+  "confidence": 0.93
+ },
+ "screen1_q13": {
+  "answer": "12:21",
+  "confidence": 0.93
+ },
+ "screen1_q14": {
+  "answer": "Reply",
+  "confidence": 0.9
+ },
+ "screen2_q01": {
+  "answer": "unknown",
+  "confidence": 0.7
+ },
+ "screen2_q02": {
+  "answer": "58%",
+  "confidence": 0.95
+ },
+ "screen2_q03": {
+  "answer": "Uploading to cloud (7 of 12)",
+  "confidence": 0.88
+ },
+ "screen2_q04": {
+  "answer": "Probably yes; the toggle icon is purple (accent colour), but no on/off attribute is given",
+  "confidence": 0.45
+ },
+ "screen2_q05": {
+  "answer": "No, off",
+  "confidence": 0.93
+ },
+ "screen2_q06": {
+  "answer": "Battery low, 129% remaining",
+  "confidence": 0.8
+ },
+ "screen2_q07": {
+  "answer": "Bottom right, just above the taskbar",
+  "confidence": 0.93
+ },
+ "screen2_q08": {
+  "answer": "Share",
+  "confidence": 0.88
+ },
+ "screen2_q09": {
+  "answer": "Left (inferred: the photo spans x 281-500, all info text sits right of it; the file name itself is not in the input)",
+  "confidence": 0.45
+ },
+ "screen2_q10": {
+  "answer": "4032 x 3024",
+  "confidence": 0.95
+ },
+ "screen2_q11": {
+  "answer": "File, Edit, View",
+  "confidence": 0.92
+ },
+ "screen2_q12": {
+  "answer": "unknown",
+  "confidence": 0.6
+ },
+ "screen2_q13": {
+  "answer": "Photo Viewer",
+  "confidence": 0.96
+ },
+ "screen3_q01": {
+  "answer": "Preferences",
+  "confidence": 0.96
+ },
+ "screen3_q02": {
+  "answer": "General",
+  "confidence": 0.95
+ },
+ "screen3_q03": {
+  "answer": "General, Appearance, Notifications, Privacy, Advanced",
+  "confidence": 0.9
+ },
+ "screen3_q04": {
+  "answer": "Mara Klein",
+  "confidence": 0.95
+ },
+ "screen3_q05": {
+  "answer": "English (United Kingdom)",
+  "confidence": 0.95
+ },
+ "screen3_q06": {
+  "answer": "(UTC+01:00) Berlin, Vienna",
+  "confidence": 0.95
+ },
+ "screen3_q07": {
+  "answer": "Nothing; it shows the placeholder https://",
+  "confidence": 0.9
+ },
+ "screen3_q08": {
+  "answer": "No, unchecked",
+  "confidence": 0.95
+ },
+ "screen3_q09": {
+  "answer": "Open last project on start; Check for updates automatically",
+  "confidence": 0.94
+ },
+ "screen3_q10": {
+  "answer": "6.8 GB of 10 GB (68%)",
+  "confidence": 0.95
+ },
+ "screen3_q11": {
+  "answer": "Save changes",
+  "confidence": 0.92
+ },
+ "screen3_q12": {
+  "answer": "To the left of Save changes, on the same row",
+  "confidence": 0.93
+ },
+ "screen3_q13": {
+  "answer": "Manage storage",
+  "confidence": 0.85
+ },
+ "screen3_q14": {
+  "answer": "Acme Analytics (Dashboard page)",
+  "confidence": 0.8
+ },
+ "sequence_workflow_q01": {
+  "answer": "Jonas Berger, into the Full name field",
+  "confidence": 0.92
+ },
+ "sequence_workflow_q02": {
+  "answer": "t=2.5 s",
+  "confidence": 0.9
+ },
+ "sequence_workflow_q03": {
+  "answer": "t=5.0 s",
+  "confidence": 0.88
+ },
+ "sequence_workflow_q04": {
+  "answer": "At t=7.0 s the Enable notifications checkbox changed from off to on",
+  "confidence": 0.88
+ },
+ "sequence_workflow_q05": {
+  "answer": "Save (inferred from the Settings saved toast and the title change; the pointer is never shown on the Save button)",
+  "confidence": 0.6
+ },
+ "sequence_workflow_q06": {
+  "answer": "A notification Settings saved / Your profile was updated appeared bottom right, and the window title changed to Settings - saved",
+  "confidence": 0.9
+ },
+ "sequence_workflow_q07": {
+  "answer": "Settings saved. Your profile was updated.",
+  "confidence": 0.92
+ },
+ "sequence_workflow_q08": {
+  "answer": "About 6 seconds (t=10.0 s to t=16.0 s)",
+  "confidence": 0.88
+ },
+ "sequence_workflow_q09": {
+  "answer": "Empty; it showed the placeholder Enter a value",
+  "confidence": 0.92
+ },
+ "sequence_workflow_q10": {
+  "answer": "Settings - saved",
+  "confidence": 0.88
+ },
+ "sequence_workflow_q11": {
+  "answer": "No",
+  "confidence": 0.9
+ },
+ "sequence_workflow_q12": {
+  "answer": "On (checked, unchanged)",
+  "confidence": 0.92
+ },
+ "sequence_workflow_q13": {
+  "answer": "To the Full name field: the pointer moved from 781,741 via 684,575 and 587,409 toward the field at 490,244, which got focus at t=1.5 s",
+  "confidence": 0.7
+ },
+ "sequence_workflow_q14": {
+  "answer": "Jonas",
+  "confidence": 0.9
+ }
+}
